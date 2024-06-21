@@ -1,0 +1,18 @@
+framework:
+    messenger:
+        transports:
+            async:
+#                dsn: "sqs://localstack:4566/000000000000/queue?sslmode=disable"
+                dsn: "sqs://localstack:4566/queue?sslmode=disable"
+#                dsn: "sqs://sqs.eu-west-1.localstack:4566/000000000000/queue?sslmode=disable"
+#                dsn: "http://sqs.eu-west-1.localstack:4566/000000000000/queue"
+                options:
+#                    auto_setup: false
+#                    access_key: 'LSIAQAAAAAAVNCBMPNSG'
+#                    secret_key: 'test'
+                    region: 'eu-west-1'
+                    sslmode: 'disable'
+
+        routing:
+             'App\Message\TestMessage': async
+

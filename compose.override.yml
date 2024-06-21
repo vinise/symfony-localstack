@@ -1,0 +1,4 @@
+services:
+  localstack:
+    environment:
+      - LOCALSTACK_AUTH_TOKEN="ls-WuqE0850-4707-pARe-PiTA-mUNucoQu4285"
